@@ -1,0 +1,98 @@
+/* AJUSTES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* AJUSTES DE UNIDADES E MEDIDAS */
+:root {
+    font-size: 62.5%;
+
+    --ff-heading: 'Mulish', sans-serif;
+
+    --fs-heading: 5.8rem;
+    --fs-subheading: 3.5rem;
+    --fs-terciary: 3.2rem;
+    --fs-texting: 1.9rem;
+
+    --hue: 240;
+    --fc-heading: hsl(194, 97%, 31%);
+    --fc-subheading: hsl(var(--hue), 9%, 89%);
+    --fc-terciary: hsl(var(--hue), 9%, 89%);
+    --fc-texting: hsl(var(--hue), 7%, 78%);
+
+    --card-background: hsl(var(--hue), 6%, 13%);
+    --card-border: hsl(var(--hue), 6%, 21%);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* AJUSTES DO BODY */
+body {
+    font-family: var(--ff-heading);
+
+    background-color: hsl(240, 6%, 8%);
+
+    padding: 7.5rem 12rem;
+
+    display: grid;
+    justify-content: center; /* ALINHAMENTO CENTRAL DO CONTEÚDO */
+}
+
+/* AJUSTES DO GRID DO MAIN */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 37rem);
+    row-gap: 4.8rem;
+    column-gap: 6rem; /* SE QUISESSE JUNTAR OS DOIS GAPS FICARIA "gap: 4.8 rem 6rem;" */
+
+    margin-top: 6.2rem;
+}
+
+/* AJUSTES DO HEADING */
+h1 {
+    font-size: var(--fs-heading);
+    font-weight: 900;
+
+    color: var(--fc-heading);
+}
+
+/* AJUSTES DO TERCIARY */
+h3 {
+    font-size: var(--fs-terciary);
+    font-weight: 600;
+
+    color: var(--fc-terciary);
+}
+
+/* AJUSTES DOS SUBTEXTOS */
+h2 {
+    font-size: var(--fs-subheading);
+    font-weight: 900;
+
+    color: var(--fc-subheading);
+
+    padding: 2.4rem 3.2rem 0px;
+}
+
+/* AJUSTES DOS PARÁGRAFOS */
+p {
+    font-size: var(--fs-texting);
+    font-weight: 600;
+
+    color: var(--fc-texting);
+
+    padding: 2.4rem 3.2rem 3.2rem;
+}
+
+/* FORMATAÇÃO DOS CARDS */
+.card {
+    background-color: var(--card-background);
+    border: 2px solid var(--card-border);
+    border-radius: 8px;
+
+    overflow: hidden; /* PARA ESCONDER AS BORDAS DA IMAGEM QUE EXCEDEM O TAMANHO DO CARD */
+}
